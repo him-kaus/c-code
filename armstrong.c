@@ -1,6 +1,5 @@
 #include<stdio.h>
 int main()
-
 {
     int n,m,rem,arm=0;
     printf("Enter a value\n");
@@ -14,12 +13,9 @@ int main()
         n=n/10;
     }
     if(arm==m)
-    {
         printf("Number is Armstrong");
-    }
     else
-    {
         printf("Number is not Armstrong");
-    }
+
     return 0;
 }
