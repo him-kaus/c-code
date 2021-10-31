@@ -4,12 +4,12 @@ int main()
 	int n,i,fact;
 	printf("Enter a no:");
 	scanf("%d",&n);
-	/*for(i=1;i<=10;i++)
-	{
-	fact =n%i;
-	pritf("fact:%d",fact);	
-	}
-	*/
+	if(n!=0){
+	if (n==1){
+        printf("\none is niether prime nor composite");
+    	}
+	else{
+	for(i=2;i<n-1;i++){
 	if(n%i==0)
 	{
 	printf("No. is not prime.. ");
@@ -18,6 +18,8 @@ int main()
 	{
 		printf("No is prime..");
 	}
-	
+	}
+	}
+	}
 	 return 0;
 }
