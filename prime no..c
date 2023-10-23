@@ -1,23 +1,56 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
+
 {
-	int n,i,fact;
-	printf("Enter a no:");
-	scanf("%d",&n);
-	/*for(i=1;i<=10;i++)
-	{
-	fact =n%i;
-	pritf("fact:%d",fact);	
-	}
-	*/
-	if(n%i==0)
-	{
-	printf("No. is not prime.. ");
-	}
-	else
-	{
-		printf("No is prime..");
-	}
-	
-	 return 0;
+
+    int i, num, temp = 0; 
+
+    // read input from user.
+
+    printf("Enter any numb to Check for Prime: ");
+
+    scanf("%d", &num);
+
+    // iterate up to n/2.
+
+    for (i = 2; i <= num / 2; i++)
+
+    {
+
+        // check if num is divisible by any number.
+
+        if (num % i == 0)
+
+        {
+
+            temp++;
+
+            break;
+
+        }
+
+    } 
+
+    // check for the value of temp and num. 
+
+    if (temp == 0 && num != 1)
+
+    {
+
+        printf("%d is a Prime number", num);
+
+    }
+
+    else
+
+    {
+
+        printf("%d is not a Prime number", num);
+
+    }
+
+    return 0;
+
 }
+
